@@ -50,4 +50,4 @@ $('#BUTTON-ID').makeaform(options);
 
 ## Demo & examples
 
-<https://github.com/douglasgimli/jquery.makeaform/examples>
+<https://github.com/douglasgimli/jquery.makeaform/tree/master/examples>
