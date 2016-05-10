@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../dist/jquery.makeaform.min.css">
+    </head>
+    <body>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand">Makeaform</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">In-page example</a></li>
+                <li><a href="modal.html">Modal example</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+            <div class="col-md-4 col-md-offset-4">
+                <a id="integration_form" href="#" class="btn btn-primary">Quero receber materiais por email</a>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="../dist/jquery.makeaform.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                options = {
+                    'token': '62bb61431348e22850828a5829c4373faafe29c1',
+                    'secret': '51a266c2844ccd5cac83d88de88d82d05358aa51',
+                    'modal': true,
+                    'fields': {
+                        'estado': ['PR','SC','SP','RS'],
+                        'nível': ['Iniciante','Intermediário','Avançado','Ninja']
+                    }
+                };
+                $('#integration_form').makeaform(options);
+            });
+        </script>
+    </body>
+</html>
