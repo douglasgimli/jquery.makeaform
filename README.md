@@ -4,7 +4,6 @@ A jQuery plugin that creates a form based on a hash options
 
 * No dependency
 * Supports Bootstrap
-* 
 
 ## Installation
 
